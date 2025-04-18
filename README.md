@@ -10,9 +10,9 @@ FEATURES
 - Admin Dashboard for managing candidates, election dates, and results.
 - User-friendly interface to vote and view candidates.
 
-|-------------|-------------------|
++-------------+-------------------+
 | Tool        | Version           |
-|-------------|-------------------|
++-------------+-------------------+
 | Node.js     | 18.14.0           |
 | Python      | 3.9               |
 | MetaMask    | Browser extension |
@@ -20,11 +20,9 @@ FEATURES
 | Truffle     | Global install    |
 | MySQL       | Port 3306         |
 | FastAPI     | Python backend    |
-|-------------|-------------------|
++-------------+-------------------+
 
-|---------------------------------|
-| DATABASE SETUP - MYSQL          |
-|---------------------------------|
+## DATABASE SETUP - MYSQL
 //Run MySQL server in Docker for ease and reliability. once done run it.
 docker compose up -d
 
@@ -65,9 +63,7 @@ pip install fastapi mysql-connector-python pydantic python-dotenv 'uvicorn[stand
 //Start the FastAPI server for the mysql API:
 uvicorn main:app --reload --host 127.0.0.1
 
-|---------------------------------|
-| BLOCKCHAIN SETUP - LOCAL        |
-|---------------------------------|
+## BLOCKCHAIN SETUP - LOCAL
 //Install Ganache:
 npm install -g ganache
 
@@ -89,9 +85,8 @@ Compile and deploy the contracts:
 truffle compile
 truffle migrate --reset
 
-|---------------------------------|
-| FRONTEND AND BACKEND SETUP      |
-|---------------------------------|
+
+## FRONTEND AND BACKEND SETUP
 //Setup - from root of the project:
 npm install
 
@@ -104,9 +99,7 @@ node index.js
 //Visit the app in your browser:
 http://localhost:8080
 
-|---------------------------------|
-| NOTES                           |
-|---------------------------------|
 
+## NOTES
 //Contract addresses change with each redeployment:
 truffle migrate --reset
