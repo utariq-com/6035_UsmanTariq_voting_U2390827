@@ -63,7 +63,7 @@ Install Python dependencies:
 Start the FastAPI server for the mysql API:
   uvicorn main:app --reload --host 127.0.0.1
 
-## BLOCKCHAIN SETUP - LOCAL
+## BLOCKCHAIN SETUP
 Install Ganache:
   npm install -g ganache
 
